@@ -1,5 +1,3 @@
-Claro! Vamos direto e didático:
-
 ---
 
 # 🎯 O que é a heurística **Distância de Manhattan**?
@@ -53,10 +51,6 @@ Você faz isso para todas as peças (ignorando o 0) e soma.
 | Cálculo                | Soma das distâncias verticais e horizontais de cada peça |
 | Benefício principal    | Boa aproximação do custo, eficiente de calcular |
 | Uso ideal              | Algoritmos como A* para busca ótima e rápida |
-
----
-
-Claro! Vamos analisar o que esse código faz e como ele difere da versão anterior com **BFS**.
 
 ---
 
