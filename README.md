@@ -1,5 +1,3 @@
----
-
 # 🎯 O que é a heurística **Distância de Manhattan**?
 
 No contexto do **8-puzzle**, a **Distância de Manhattan** mede **o quanto cada peça está "longe" da posição correta**, somando apenas **movimentos horizontais e verticais** (não pode ir na diagonal, como em ruas de um bairro quadriculado — daí o nome "Manhattan").
