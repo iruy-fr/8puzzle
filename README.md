@@ -135,5 +135,3 @@ O novo código com A*:
 - É **mais inteligente**, pois usa uma **heurística** para decidir por onde começar.
 - **Evita estados impossíveis**.
 - Usa uma **fila de prioridade (heap)** para sempre expandir o caminho mais promissor.
-
-Quer que eu mostre visualmente a diferença entre BFS e A* com um exemplo pequeno?
