@@ -1,4 +1,4 @@
-# 🎯 O que é a heurística **Distância de Manhattan**?
+# ❔ O que é a heurística **Distância de Manhattan**?
 
 No contexto do **8-puzzle**, a **Distância de Manhattan** mede **o quanto cada peça está "longe" da posição correta**, somando apenas **movimentos horizontais e verticais** (não pode ir na diagonal, como em ruas de um bairro quadriculado — daí o nome "Manhattan").
 
@@ -20,7 +20,7 @@ Você faz isso para todas as peças (ignorando o 0) e soma.
 
 ---
 
-# 🚀 Por que a Distância de Manhattan é útil?
+# 🌇 Por que a Distância de Manhattan é útil?
 
 **1. Admissível**
 - Ela **nunca superestima** o custo real.
@@ -41,7 +41,7 @@ Você faz isso para todas as peças (ignorando o 0) e soma.
 
 ---
 
-# 🎯 Resumindo
+# 🧠 Resumindo
 
 | Característica        | Manhattan Distance                         |
 |------------------------|--------------------------------------------|
@@ -52,7 +52,7 @@ Você faz isso para todas as peças (ignorando o 0) e soma.
 
 ---
 
-## ✅ **1. Cálculo da Heurística (Distância de Manhattan)**
+## 🧮 **1. Cálculo da Heurística (Distância de Manhattan)**
 
 A **função `distancia_manhattan`** calcula a soma das distâncias de cada peça até sua posição correta no estado objetivo:
 
