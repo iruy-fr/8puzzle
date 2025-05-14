@@ -69,25 +69,42 @@ def astar_8puzzle(estado_inicial):
                 if estado_atual[i][j] == 0:
                     x, y = i, j
                     break
+            else:
+                continue
+            break  # Sai do laço externo também
 
-        # Gera novos estados
+        # Explora os movimentos possíveis a partir do 0
         for dx, dy in direcoes:
             novo_x, novo_y = x + dx, y + dy
             if 0 <= novo_x < 3 and 0 <= novo_y < 3:
-                novo_estado = [linha[:] for linha in estado_atual]
+                # Cria uma cópia do estado atual pra depois inserir o novo estado
+                novo_estado = []
+                for linha in estado_atual:
+                    nova_linha = []
+                    for elemento in linha:
+                        nova_linha.append(elemento)
+                    novo_estado.append(nova_linha)
+
+                #Troca as posições do 0 com o número vizinho
                 novo_estado[x][y], novo_estado[novo_x][novo_y] = novo_estado[novo_x][novo_y], novo_estado[x][y]
 
                 novo_estado_tupla = tuple(map(tuple, novo_estado))
-                if novo_estado_tupla not in visitados:
-                    if novo_estado == objetivo:
-                        return caminho + [novo_estado]
-                    visitados.add(novo_estado_tupla)
-                    novo_movimentos = movimentos + 1
-                    heuristica = distancia_manhattan(novo_estado, objetivo)
-                    heapq.heappush(fila, (
-                    novo_movimentos + heuristica, novo_movimentos, novo_estado, caminho + [novo_estado]))
+                if novo_estado_tupla in visitados:
+                    continue
 
-    return None
+                visitados.add(novo_estado_tupla)
+                novo_movimentos = movimentos + 1
+                heuristica = distancia_manhattan(novo_estado, objetivo)
+
+                if novo_estado == objetivo:
+                    return caminho + [novo_estado]
+
+                heapq.heappush(fila, (
+                    novo_movimentos + heuristica,
+                    novo_movimentos,
+                    novo_estado,
+                    caminho + [novo_estado]
+                ))
 
 
 # Função para imprimir o estado
