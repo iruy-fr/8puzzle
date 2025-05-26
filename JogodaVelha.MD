@@ -1,3 +1,8 @@
+Claro! Aqui está um relatório/documentação no formato Markdown (`README.md`) que você pode incluir no seu repositório. Ele explica a implementação do jogo da velha com IA usando o algoritmo **Minimax com poda alfa-beta**, detalha os testes realizados e analisa os ganhos de desempenho da poda.
+
+---
+
+
 # 🎮 Jogo da Velha com IA (Minimax com Poda Alfa-Beta)
 
 ## ✨ Descrição do Projeto
@@ -61,3 +66,37 @@ Criamos um script onde ambas as jogadas (X e O) são feitas pela IA, utilizando 
 ---
 
 ## 📂 Estrutura do Projeto
+
+```
+
+
+├── jogo\_da\_velha.py        # Código principal com a interface e lógica do jogo   
+├── ia\_vs\_ia\_test.py        # Script de teste para IA vs IA  
+└── README.md               # Este documento
+
+````
+
+---
+
+## 🚀 Como Executar
+
+1. Certifique-se de ter o Python 3 instalado.
+2. Execute o arquivo principal:
+
+```bash
+  python jogo_da_velha.py
+````
+
+3. (Opcional) Para rodar o teste IA vs IA:
+
+```bash
+  python ia_vs_ia_test.py
+```
+
+---
+
+## 📌 Conclusão
+
+A implementação do Jogo da Velha com IA utilizando **Minimax com Poda Alfa-Beta** é eficiente, jogando perfeitamente e garantindo sempre o melhor resultado. A poda oferece uma melhora de desempenho significativa, mesmo em jogos simples como este, e seria ainda mais essencial em jogos com árvores de decisão maiores.
+
+---
