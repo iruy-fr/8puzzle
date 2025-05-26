@@ -1,8 +1,3 @@
-Claro! Aqui está um relatório/documentação no formato Markdown (`README.md`) que você pode incluir no seu repositório. Ele explica a implementação do jogo da velha com IA usando o algoritmo **Minimax com poda alfa-beta**, detalha os testes realizados e analisa os ganhos de desempenho da poda.
-
----
-
-
 # 🎮 Jogo da Velha com IA (Minimax com Poda Alfa-Beta)
 
 ## ✨ Descrição do Projeto
