@@ -37,7 +37,7 @@ Ela apresenta um tabuleiro 3x3 onde os jogadores podem clicar para jogar, e um b
 Verificar se a IA **toma decisões otimizadas** e **nunca perde** quando joga contra ela mesma.
 
 ### Método
-Criamos um script onde ambas as jogadas (X e O) são feitas pela IA, utilizando o algoritmo Minimax com poda alfa-beta.
+Foi solicitado o teste ao ChatGPT onde ambas as jogadas (X e O) são feitas pela IA, utilizando o algoritmo Minimax com poda alfa-beta.
 
 ### Resultado
 - ✅ **Empate garantido** em todos os jogos.
