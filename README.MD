@@ -13,7 +13,7 @@
 
 ---
 
-## 🆚 Jogo da Velha Minimax (Poda Alfa-beta)
+## 🎮 Jogo da Velha Minimax (Poda Alfa-beta)
 ➡️ [Jogo da Velha Minimax](https://github.com/iruy-fr/8puzzle/blob/main/JogodaVelha.MD)
 
 
