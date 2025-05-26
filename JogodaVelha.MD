@@ -66,7 +66,6 @@ Criamos um script onde ambas as jogadas (X e O) são feitas pela IA, utilizando 
 
 
 ├── jogo\_da\_velha.py        # Código principal com a interface e lógica do jogo   
-├── ia\_vs\_ia\_test.py        # Script de teste para IA vs IA  
 └── README.md               # Este documento
 
 ````
@@ -81,13 +80,6 @@ Criamos um script onde ambas as jogadas (X e O) são feitas pela IA, utilizando 
 ```bash
   python jogo_da_velha.py
 ````
-
-3. (Opcional) Para rodar o teste IA vs IA:
-
-```bash
-  python ia_vs_ia_test.py
-```
-
 ---
 
 ## 📌 Conclusão
