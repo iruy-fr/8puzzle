@@ -1,3 +1,8 @@
+## 👑 Problema 8 Puzzle — Buscas em Largura
+➡️ [Busca em Largura](https://github.com/iruy-fr/8puzzle/blob/main/BFSalg.py)
+
+---
+
 ## 🔢 Problema do 8 Puzzle — Heurística de Manhattan 
 ➡️ [Heurística de Manhattan](https://github.com/iruy-fr/8puzzle/blob/main/ManhattanH.md)
 
