@@ -37,7 +37,7 @@ def vizinho_com_menor_conflito(estado):
     return melhor_estado, menor_conflito
 
 
-def subida_de_encosta_com_reinicio(max_reinicios=1000):
+def subida_de_encosta_com_reinicio(max_reinicios=100):
     """Executa a subida de encosta com reinício aleatório."""
     reinicios = 0
     passos = 0
@@ -79,14 +79,15 @@ def print_tabuleiro(estado):
 
 # Executa o algoritmo
 if __name__ == "__main__":
-    solucao, passos, reinicios = subida_de_encosta_com_reinicio()
+    for _ in range(100):
+        solucao, passos, reinicios = subida_de_encosta_com_reinicio()
 
-    if solucao:
-        print("Solução encontrada:")
-        print(solucao)
-        print("Conflitos:", contar_conflitos(solucao))
-        print("Passos:", passos)
-        print("Reinícios:", reinicios)
-        print_tabuleiro(solucao)
-    else:
-        print("Nenhuma solução encontrada após o número máximo de reinícios.")
+        if solucao:
+            print("Solução encontrada:")
+            print(solucao)
+            print("Conflitos:", contar_conflitos(solucao))
+            print("Passos:", passos)
+            print("Reinícios:", reinicios)
+            print_tabuleiro(solucao)
+        else:
+            print("Nenhuma solução encontrada após o número máximo de reinícios.")

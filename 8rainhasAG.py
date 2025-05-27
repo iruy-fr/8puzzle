@@ -2,8 +2,8 @@ import random
 
 N = 8  # Tamanho do tabuleiro (8x8)
 TAMANHO_POPULACAO = 100
-TAXA_MUTACAO = 0.05
-MAX_GERACOES = 1000
+TAXA_MUTACAO = 0.25
+MAX_GERACOES = 1500
 
 def criar_individuo():
     """Gera uma solução aleatória (1 rainha por coluna, em linha aleatória)."""
@@ -80,4 +80,5 @@ def main():
         print("Nenhuma solução foi encontrada após o limite de gerações.")
 
 if __name__ == "__main__":
-    main()
+    for _ in range(100):
+        main()
