@@ -24,23 +24,28 @@ Inspirado no processo físico de recozimento. O algoritmo aceita soluções pior
 * **Critério de Avaliação**: Número de pares de rainhas em conflito (mesma linha ou mesma diagonal).
 * **Critério de Parada**:
 
-  * Genético: máximo de 1000 gerações ou solução encontrada.
-  * Subida de Encosta: máximo de 1000 reinícios.
+  * Genético: número máximo de gerações ou solução encontrada.
+  * Subida de Encosta: número máximo de reinícios ou solução encontrada.
   * Tempera Simulada: temperatura mínima ou solução encontrada.
 * **Execuções**: Cada algoritmo foi executado 100 vezes para fins de comparação estatística.
+  
+  * Genético: testes feitos com número máximo de 1000,1500 e 2000 gerações ou solução encontrada.
+  * Subida de Encosta: testes feitos com número máximo de 100, 500 e 1000 reinícios.
+  * Tempera Simulada: testes feitos com temperatura mínima de ou solução encontrada.
 
 ---
 
-### 3. **Resultados Obtidos (100 Execuções por Algoritmo)**
+### 3. **Resultados Obtidos (300 Execuções por Algoritmo com diferentes valores)**
 
 | 🔢 **Métrica**               | 🧬 Genético | 🧗 Subida c/ Reinício | ❄️ Tempera Simulada |
-| ---------------------------- | ----------- | --------------------- | ------------------- |
-| ✅ **Taxa de Sucesso (%)**    | 93%         | 99%                   | 97%                 |
-| 🔁 **Média de Iterações**    | 59.8        | 598.3                 | 241.0               |
+| ---------------------------- |-------------|-----------------------|---------------------|
+| ✅ **Taxa de Sucesso (%)**    | 71%         | 100%                  | 36%                 |
+| 🔁 **Média de Iterações**    | 237.64      | 34.51                 | 258.73              |
 | ⏱ **Tempo Médio (segundos)** | 0.0033      | 0.0194                | 0.0083              |
 | ❌ **Erro Médio (se falhou)** | 2.0         | 0.07                  | 0.11                |
 
-> Nota: Iterações correspondem a gerações (genético), passos (subida de encosta) ou ciclos até o resfriamento final (tempera simulada).
+> Nota: Iterações correspondem a soma das gerações divididas por 300 (genético), soma da quantidade de passos divididos por 300 (subida de encosta) 
+> ou quantidade de ciclos até o resultado ou resfriamento final (tempera simulada).
 
 ---
 

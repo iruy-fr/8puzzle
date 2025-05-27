@@ -29,6 +29,7 @@ def simulated_annealing(temp_inicial=200, resfriamento=0.99, temp_minima=0.01):
     """
     Executa o algoritmo de tempera simulada para encontrar uma solução para o problema das 8 rainhas.
     """
+    #TODO Refazer o cálculo
     contador = 0
     estado_atual = [random.randint(0, N - 1) for _ in range(N)]
     conflitos_atual = calcular_conflitos(estado_atual)
