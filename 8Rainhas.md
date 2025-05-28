@@ -46,8 +46,8 @@ Inspirado no processo físico de recozimento. O algoritmo aceita soluções pior
 > Nota: Iterações correspondem a soma das gerações divididas por 300 (genético), soma da quantidade de passos divididos por 300 (subida de encosta) 
 > e quantidade de ciclos até o resultado ou resfriamento final (tempera simulada).
 ### 3.1 **Documentos de testes e execuções
-[🧬 Genético](8RainhasAG.xlsx)
-[🧗 Subida c/ Reinício](8RainhasSERA.xlsx)
+[🧬 Genético](8RainhasAG.xlsx)<br>
+[🧗 Subida c/ Reinício](8RainhasSERA.xlsx)<br>
 [❄️ Tempera Simulada](8RainhasTS.xlsx)
 
 ---
