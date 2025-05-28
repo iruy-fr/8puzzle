@@ -25,11 +25,11 @@ def gerar_estado_vizinho(estado):
     novo_estado[col] = nova_linha
     return novo_estado
 
-def simulated_annealing(temp_inicial=200, resfriamento=0.99, temp_minima=0.01):
+def simulated_annealing(temp_inicial=100, resfriamento=0.99, temp_minima=0.01):
     """
     Executa o algoritmo de tempera simulada para encontrar uma solução para o problema das 8 rainhas.
     """
-    #TODO Refazer o cálculo
+
     contador = 0
     estado_atual = [random.randint(0, N - 1) for _ in range(N)]
     conflitos_atual = calcular_conflitos(estado_atual)
@@ -53,6 +53,8 @@ def simulated_annealing(temp_inicial=200, resfriamento=0.99, temp_minima=0.01):
         print("Temperatura", temperatura)
         return estado_atual
     else:
+        print("Contador", contador)
+        print("Temperatura", temperatura)
         return None
 
 def print_tabuleiro(estado):
